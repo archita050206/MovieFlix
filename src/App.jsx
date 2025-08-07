@@ -68,7 +68,7 @@ useEffect(() => {
   return (
     <main>
       <div className="pattern">
-        <div className="wrapper bg-[url('./BG.png')] bg-cover bg-center min-h-screen w-full">
+        <div className="wrapper bg-[url('/BG.png')] bg-cover bg-center min-h-screen w-full">
           <header className="">
           <img src="./hero-img.png" alt="" className="mx-auto" />
             <h1 className='text-5xl text-center font-bold text-white w-1/2 mx-auto'> Find <span className="bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent">Movies</span> You'll Enjoy Without the Hassle
