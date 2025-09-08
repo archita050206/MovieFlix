@@ -70,7 +70,7 @@ useEffect(() => {
       <div className="pattern">
         <div className="wrapper bg-[url('/BG.png')] bg-cover sm:bg-contain bg-center lg:min-h-screen max-h-screen lg:py-0 py-15 w-full">
           <header className="">
-          <img src="./hero-img.png" alt="" className="mx-auto" />
+          <img src="./hero-img.png" alt="" className="mx-auto lg:w-auto w-3/4" />
             <h1 className='text-3xl md:text-3xl lg:text-5xl text-center font-bold text-white lg:w-1/2 w-full  mx-auto'> Find <span className="bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent">Movies</span> You'll Enjoy Without the Hassle
             </h1>
             <Search searchTerm={searchTerm} setsearchTerm={setsearchTerm}/>
@@ -78,10 +78,10 @@ useEffect(() => {
           
         </div>
         <section className='all-movies bg-[#050513] text-white text-center'>
-            <h2 className='text-4xl font-bold pb-7'>All <span className='bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent'>Movies</span></h2>
+            <h2 className='text-3xl lg:text-4xl font-bold pb-7'>All <span className='bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent'>Movies</span></h2>
             {isLoading?(<p >Loading...</p>):
             errorMessage?(<p className='text-red-500'>{errorMessage}</p>):
-            ( <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mx-36 gap-4 ">
+            ( <div className="grid grid-cols-1 md:grid-cols-4 lg:mx-36 mx-20 lg:gap-4 gap-2">
               {movies.map((item)=>(
                 // <p key={item.id}>{item.title}</p>
                 <MovieCard key={item.id} item={item}/>
