@@ -68,10 +68,10 @@ useEffect(() => {
   return (
     <main>
       <div className="pattern">
-        <div className="wrapper bg-[url('/BG.png')] bg-cover bg-center min-h-screen w-full">
+        <div className="wrapper bg-[url('/BG.png')] bg-cover sm:bg-contain bg-center lg:min-h-screen max-h-screen lg:py-0 py-15 w-full">
           <header className="">
           <img src="./hero-img.png" alt="" className="mx-auto" />
-            <h1 className='text-5xl text-center font-bold text-white w-1/2 mx-auto'> Find <span className="bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent">Movies</span> You'll Enjoy Without the Hassle
+            <h1 className='text-3xl md:text-3xl lg:text-5xl text-center font-bold text-white lg:w-1/2 w-full  mx-auto'> Find <span className="bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent">Movies</span> You'll Enjoy Without the Hassle
             </h1>
             <Search searchTerm={searchTerm} setsearchTerm={setsearchTerm}/>
           </header>
