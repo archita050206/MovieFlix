@@ -81,7 +81,7 @@ useEffect(() => {
             <h2 className='text-3xl lg:text-4xl font-bold pb-7'>All <span className='bg-gradient-to-r from-indigo-200 to-purple-400 bg-clip-text text-transparent'>Movies</span></h2>
             {isLoading?(<p >Loading...</p>):
             errorMessage?(<p className='text-red-500'>{errorMessage}</p>):
-            ( <div className="grid grid-cols-1 md:grid-cols-4 lg:mx-36 mx-20 lg:gap-4 gap-2">
+            ( <div className="grid grid-cols-1 md:grid-cols-4 lg:mx-36  justify-items-center lg:gap-4 gap-2">
               {movies.map((item)=>(
                 // <p key={item.id}>{item.title}</p>
                 <MovieCard key={item.id} item={item}/>
